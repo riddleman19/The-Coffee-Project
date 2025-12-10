@@ -1,31 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Organic Volcanic Colombian Coffee</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style> /* Mobile-first CSS: hero full-width, table responsive */ body{font-family:Arial;margin:0;padding:20px;background:#f5f5f5;} .hero{background:#4a2c0b;color:white;text-align:center;padding:50px 20px;} table{width:100%;border-collapse:collapse;} th,td{padding:10px;border:1px solid #ddd;} button{padding:10px 20px;background:#28a745;color:white;border:none;cursor:pointer;} @media(max-width:600px){table{font-size:14px;}} </style>
+  <title>Organic Volcanic Colombian Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #faf7f2;
+      color: #222;
+    }
+
+    .hero {
+      background: radial-gradient(circle at top left, #5b3411, #2a1607);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 16px 35px rgba(0,0,0,0.45);
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      margin: 10px 0;
+      letter-spacing: 0.04em;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 8px auto;
+    }
+
+    .badge {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    button {
+      padding: 12px 26px;
+      background: #f4b057;
+      color: #2a1607;
+      border: none;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      margin-top: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 26px rgba(0,0,0,0.3);
+    }
+
+    section.main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      line-height: 1.7;
+      padding-left: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background: #f4e3cf;
+      font-weight: 600;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .faq h3 {
+      font-size: 1rem;
+      margin-top: 18px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 25px 10px 35px;
+      color: #666;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <section class="hero">
 
-        <!-- Add to hero section after headline -->
-<img src="volcanic-coffee.jpg" alt="Organic Colombian beans" style="width:100%; max-height:300px; object-fit:cover;">
-<p>🥇 Hand-picked ripe cherries from volcanic soil • Expert roast • Ships to USA</p>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="volcanic-coffee.jpg" alt="Organic Colombian beans">
+    <p class="badge">🥇 Hand-picked ripe cherries • Volcanic soil • Expert roast • Ships to USA & EU</p>
 
-        
-        <h1>Pure Organic Colombian Coffee: Volcanic Soil, Expert Roast</h1>
-        <p>Single farm direct from Colombia – sourced by my mother</p>
-        <a href="https://wa.me/+17868652589?text=I%20want%20Colombian%20coffee%20US%20order"><button>Order via WhatsApp</button></a>
-    </section>
-    <section style="max-width:800px;margin:auto;">
-        <h2>Product & Subscription</h2>
-        <table>
-            <tr><th>Item</th><th>One-Time (USD)</th><th>Monthly Sub (USD)</th><th>Ships To</th></tr>
-            <tr><td>250g</td><td>$15</td><td>$13</td><td>US, Spain, EU</td></tr>
-            <tr><td>500g</td><td>$28</td><td>$24</td><td>US, Spain, EU</td></tr>
-            <tr><td>1kg</td><td>$52</td><td>$45</td><td>US, Spain, EU</td></tr>
-        </table>
-        <p>7-14 day US delivery. PayPal/Venmo: <b>yourpaypal@email.com</b>. Subs auto via email invoice.</p>
-    </section>
+    <h1>Pure Organic Colombian Coffee</h1>
+    <p>Single-farm, volcanic soil coffee sourced directly by my mother from one family farm in Colombia.</p>
+
+    <a href="https://wa.me/17868652589?text=I%20want%20Colombian%20coffee%20US%20order">
+      <button>Order via WhatsApp</button>
+    </a>
+
+    <p class="badge" style="margin-top:16px;">
+      Secure payment via PayPal / bank transfer • Roasted in small batches in Spain
+    </p>
+  </section>
+
+  <!-- WHY THIS COFFEE -->
+  <section class="main">
+    <h2>Why this coffee?</h2>
+    <ul>
+      <li><b>Single farm, not a blend</b> – traceable to one Colombian finca with rich volcanic soil.</li>
+      <li><b>Hand-picked cherries</b> – only ripe red cherries are selected by experienced pickers.</li>
+      <li><b>Fully organic</b> – grown without synthetic fertilizers or pesticides.</li>
+      <li><b>Expert roast profile</b> – balanced sweetness, clarity and smooth body.</li>
+      <li><b>Fresh small-batch roasting</b> – roasted shortly before shipping so it reaches you alive and aromatic.</li>
+    </ul>
+  </section>
+
+  <!-- PRODUCT & SUBSCRIPTIONS -->
+  <section class="main">
+    <h2>Product & Subscriptions</h2>
+    <p>Choose your size and we’ll roast, pack and ship your bag in a high-barrier valve bag to protect flavor.</p>
+
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Tasting notes</th>
+        <th>One-time (USD)</th>
+        <th>Monthly sub</th>
+        <th>Ships to</th>
+      </tr>
+      <tr>
+        <td>250g Volcanic Origin</td>
+        <td>Cocoa, panela sugar, stone fruit</td>
+        <td>$15</td>
+        <td>$13</td>
+        <td>US, Spain, EU</td>
+      </tr>
+      <tr>
+        <td>500g House Roast</td>
+        <td>Chocolate, caramel, mild citrus</td>
+        <td>$28</td>
+        <td>$24</td>
+        <td>US, Spain, EU</td>
+      </tr>
+      <tr>
+        <td>1kg Farm Direct</td>
+        <td>Sweet, balanced, ideal for home espresso & drip</td>
+        <td>$52</td>
+        <td>$45</td>
+        <td>US, Spain, EU</td>
+      </tr>
+    </table>
+
+    <p class="note">
+      7–14 day US delivery (typical). PayPal/Venmo: <b>yourpaypal@email.com</b>.
+      Subscriptions are billed monthly; you can pause or cancel anytime by messaging us.
+      Whole bean or ground for espresso / moka pot / filter – just tell us your brew method.
+    </p>
+  </section>
+
+  <!-- STORY -->
+  <section class="main">
+    <h2>From the picker’s hands to your cup</h2>
+    <p>
+      This coffee is sourced directly by my mother from one family farm in Colombia. The same people who plant,
+      prune and pick the cherries are the ones we visit and pay fairly.
+    </p>
+    <p>
+      Cherries are picked by hand, washed and dried carefully, then shipped to us for a roast profile that
+      highlights the natural sweetness of volcanic soil. No middlemen, no anonymous blends – just transparent,
+      traceable coffee with a story.
+    </p>
+  </section>
+
+  <!-- HOW ORDERING WORKS -->
+  <section class="main">
+    <h2>How ordering works</h2>
+    <ol>
+      <li>Click the WhatsApp button or email us with your size, whole bean/ground and country.</li>
+      <li>We confirm total + shipping and send you a secure PayPal / bank transfer link.</li>
+      <li>We roast, pack and ship from Spain within 2–3 business days.</li>
+      <li>Enjoy your coffee – and tag us when you brew.</li>
+    </ol>
+    <p class="note">
+      Prefer a subscription? Tell us “monthly subscription” and we’ll set up a recurring invoice so you never run out.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="main faq">
+    <h2>FAQ</h2>
+
+    <h3>How fresh is the coffee?</h3>
+    <p>We roast in small batches and aim to ship within a few days of roast so you get it at peak flavor.</p>
+
+    <h3>Do you ship to the US?</h3>
+    <p>Yes. Orders to the US ship from Spain with tracking. Delivery usually takes 7–14 days depending on customs and carrier.</p>
+
+    <h3>Can I change or cancel my subscription?</h3>
+    <p>Anytime. Just message or email us before your next billing date and we’ll adjust or cancel it for you.</p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Volcanic Colombian Coffee · Direct from farm to cup
+  </footer>
+
+  <script>
+    // Auto-update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
