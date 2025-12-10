@@ -146,6 +146,78 @@
     </p>
   </section>
 
+  <!-- Post HERO -->
+
+<section class="main">
+  <h2>Order a bag</h2>
+  <p>Choose your size and grind type, then confirm by WhatsApp. We’ll reply with total + payment link.</p>
+
+  <form id="oneTimeForm" onsubmit="handleOneTimeOrder(event)">
+    <label for="size">Bag size</label>
+    <select id="size" name="size" required>
+      <option value="">Select size</option>
+      <option value="250g">250g</option>
+      <option value="500g">500g</option>
+      <option value="1kg">1kg</option>
+    </select>
+
+    <label for="grind">Grind type</label>
+    <select id="grind" name="grind" required>
+      <option value="">Select grind</option>
+      <option value="Whole bean">Whole bean</option>
+      <option value="Espresso">Espresso</option>
+      <option value="Moka pot">Moka pot</option>
+      <option value="Filter / V60">Filter / V60</option>
+      <option value="French press">French press</option>
+    </select>
+
+    <label for="country">Ship to</label>
+    <select id="country" name="country" required>
+      <option value="">Select region</option>
+      <option value="US">United States</option>
+      <option value="EU">European Union</option>
+      <option value="Other">Other (worldwide)</option>
+    </select>
+
+    <button type="submit">Confirm order via WhatsApp</button>
+    <p class="note">We’ll reply with final price including shipping and a PayPal / bank transfer link.</p>
+  </form>
+</section>
+
+  <!-- Subscribe POST HERO -->
+
+  <section class="main">
+  <h2>Subscribe monthly</h2>
+  <p>Get a fresh 500g bag every month so you never run out. You choose the grind; we handle the rest.</p>
+
+  <form id="subForm" onsubmit="handleSubscription(event)">
+    <label>Subscription size (fixed)</label>
+    <p><b>500g Farm Direct · $24 / month</b></p>
+
+    <label for="subGrind">Grind type</label>
+    <select id="subGrind" name="subGrind" required>
+      <option value="">Select grind</option>
+      <option value="Whole bean">Whole bean</option>
+      <option value="Espresso">Espresso</option>
+      <option value="Moka pot">Moka pot</option>
+      <option value="Filter / V60">Filter / V60</option>
+      <option value="French press">French press</option>
+    </select>
+
+    <label for="subRegion">Ship to</label>
+    <select id="subRegion" name="subRegion" required>
+      <option value="">Select region</option>
+      <option value="US">United States</option>
+      <option value="EU">European Union</option>
+      <option value="Other">Other (worldwide)</option>
+    </select>
+
+    <button type="submit">Start subscription (WhatsApp)</button>
+    <p class="note">We’ll confirm details and send you a Stripe/PayPal subscription link to pay securely each month.</p>
+  </form>
+</section>
+
+  
   <!-- WHY THIS COFFEE -->
   <section class="main">
     <h2>Why this coffee?</h2>
@@ -247,10 +319,40 @@
     © <span id="year"></span> Volcanic Colombian Coffee · Direct from farm to cup
   </footer>
 
+
+  
   <script>
     // Auto-update year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
+
+function handleOneTimeOrder(e){
+  e.preventDefault();
+  const size = document.getElementById('size').value;
+  const grind = document.getElementById('grind').value;
+  const country = document.getElementById('country').value;
+
+  const msg = `Hi, I'd like a one-time order:\n\nSize: ${size}\nGrind: ${grind}\nShip to: ${country}`;
+  const url = 'https://wa.me/17868652589?text=' + encodeURIComponent(msg);
+  window.open(url, '_blank');
+}
+
+function handleSubscription(e){
+  e.preventDefault();
+  const grind = document.getElementById('subGrind').value;
+  const region = document.getElementById('subRegion').value;
+
+  const msg = `Hi, I'd like to start a monthly subscription:\n\nPlan: 500g Farm Direct · $24/month\nGrind: ${grind}\nRegion: ${region}\n\nPlease send me a Stripe/PayPal subscription link.`;
+  const url = 'https://wa.me/17868652589?text=' + encodeURIComponent(msg);
+  window.open(url, '_blank');
+}
+
+    
   </script>
+
+  
 
 </body>
 </html>
+
+
+
