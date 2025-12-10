@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic Volcanic Colombian Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> /* Mobile-first CSS: hero full-width, table responsive */ body{font-family:Arial;margin:0;padding:20px;background:#f5f5f5;} .hero{background:#4a2c0b;color:white;text-align:center;padding:50px 20px;} table{width:100%;border-collapse:collapse;} th,td{padding:10px;border:1px solid #ddd;} button{padding:10px 20px;background:#28a745;color:white;border:none;cursor:pointer;} @media(max-width:600px){table{font-size:14px;}} </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Pure Organic Colombian Coffee: Volcanic Soil, Expert Roast</h1>
+        <p>Single farm direct from Colombia – sourced by my mother</p>
+        <a href="https://wa.me/+17868652589?text=I%20want%20Colombian%20coffee%20US%20order"><button>Order via WhatsApp</button></a>
+    </section>
+    <section style="max-width:800px;margin:auto;">
+        <h2>Product & Subscription</h2>
+        <table>
+            <tr><th>Item</th><th>One-Time (USD)</th><th>Monthly Sub (USD)</th><th>Ships To</th></tr>
+            <tr><td>250g</td><td>$15</td><td>$13</td><td>US, Spain, EU</td></tr>
+            <tr><td>500g</td><td>$28</td><td>$24</td><td>US, Spain, EU</td></tr>
+            <tr><td>1kg</td><td>$52</td><td>$45</td><td>US, Spain, EU</td></tr>
+        </table>
+        <p>7-14 day US delivery. PayPal/Venmo: <b>yourpaypal@email.com</b>. Subs auto via email invoice.</p>
+    </section>
+</body>
+</html>
