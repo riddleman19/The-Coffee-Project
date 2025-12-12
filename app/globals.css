@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2a1607;
+  --secondary: #5b3411;
+  --accent: #d4a574;
+  --accent-dark: #c89d63;
+  --light-bg: #faf7f2;
+  --white: #ffffff;
+  --gray: #666;
+  --gray-light: #999;
+  --border: #e8e0d8;
+  --success: #27ae60;
+  --warning: #e74c3c;
+  --highlight: #8b6f47;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-light-bg text-primary font-system antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+h1 {
+  @apply text-4xl md:text-5xl font-bold tracking-tight leading-tight;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight mb-3;
+}
+
+h3 {
+  @apply text-xl font-semibold leading-relaxed;
+}
+
+p {
+  @apply text-base text-gray leading-relaxed;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-7 py-3 rounded-lg font-semibold text-base bg-primary text-white transition-all duration-250 hover:bg-secondary hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-md;
+}
+
+.btn-primary-light {
+  @apply inline-flex items-center justify-center px-7 py-3 rounded-lg font-bold text-base bg-accent text-primary transition-all duration-250 hover:bg-accent-dark hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-7 py-3 rounded-lg font-semibold text-base bg-white text-primary border-2 border-accent transition-all duration-250 hover:bg-accent hover:text-primary;
+}
+
+.btn-full {
+  @apply w-full;
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+}
+
+.card-hover {
+  @apply hover:-translate-y-1 hover:shadow-xl;
+}
+
+/* Forms */
+.form-input,
+.form-select {
+  @apply w-full px-3 py-3 border border-border rounded-lg text-base font-medium text-primary transition-all duration-200 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent focus:ring-opacity-10;
+}
+
+.form-label {
+  @apply block mb-2 text-sm font-semibold text-primary;
+}
+
+.form-note {
+  @apply mt-3 px-3 py-2 bg-light-bg rounded-lg border-l-4 border-accent text-xs text-gray;
+}
+
+/* Section spacing */
+.section {
+  @apply py-16 md:py-20 px-6;
+}
+
+.section-light {
+  @apply bg-light-bg;
+}
+
+.section-white {
+  @apply bg-white;
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  @apply bg-gradient-to-r from-primary to-secondary;
+}
+
+/* Testimonial styles */
+.testimonial-card {
+  @apply bg-white rounded-lg p-6 border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow;
+}
+
+.stars {
+  @apply text-accent text-sm mb-2;
+}
+
+/* Benefit cards grid */
+.benefits-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8;
+}
+
+.benefit-card {
+  @apply bg-white rounded-lg p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+}
+
+.benefit-icon {
+  @apply text-4xl mb-3;
+}
+
+/* FAQ accordion */
+.faq-question {
+  @apply font-semibold text-primary cursor-pointer flex justify-between items-center py-5 hover:text-secondary transition-colors select-none;
+}
+
+.faq-answer {
+  @apply hidden text-gray leading-relaxed pb-5;
+}
+
+.faq-answer.open {
+  @apply block;
+}
+
+.faq-toggle {
+  @apply text-sm transition-transform duration-300;
+}
+
+.faq-toggle.open {
+  @apply rotate-180;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+  @apply fixed bottom-0 left-0 right-0 bg-primary py-3 px-6 text-center shadow-xl z-40 hidden;
+}
+
+.sticky-cta.show {
+  @apply block;
+}
+
+/* Gradient text */
+.text-gradient {
+  @apply bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Utility classes */
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  .section {
+    @apply py-10 px-4;
+  }
+}
