@@ -1,0 +1,36 @@
+{
+  "name": "volcanic-coffee-app",
+  "version": "1.0.0",
+  "description": "Farm-to-consumer specialty coffee e-commerce platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "^15.0.0",
+    "typescript": "^5.3.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16",
+    "framer-motion": "^10.16.16",
+    "zustand": "^4.4.4",
+    "graphql": "^16.8.0",
+    "graphql-request": "^6.0.0",
+    "@shopify/hydrogen-react": "^2024.1.0",
+    "clsx": "^2.0.0",
+    "recharts": "^2.10.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^15.0.0"
+  }
+}
