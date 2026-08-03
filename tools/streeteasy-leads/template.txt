@@ -1,0 +1,6 @@
+Hi {{firstName}},
+
+Thanks for reaching out about {{address}}! We're currently scheduling showings — when are you looking to move?
+
+Best,
+Geronimo
